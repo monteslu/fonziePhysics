@@ -22,7 +22,7 @@ define([
     gameAreaId: 'gameArea',
     canvasPercentage: 0.95,
     height: 600,
-    width: 800,
+    width: 1000,
     update: update,
     draw: draw,
     initInput: function(im){

@@ -5,7 +5,7 @@ define(
     {
       "x": 427.5,
       "y": 606.5,
-      "halfWidth": 500,
+      "halfWidth": 1000,
       "halfHeight": 16.5,
       "staticBody": true,
       "zone": false,
@@ -26,7 +26,7 @@ define(
     {
       "x": 430,
       "y": -50,
-      "halfWidth": 500,
+      "halfWidth": 1000,
       "halfHeight": 27.5,
       "staticBody": true,
       "zone": false,
@@ -34,7 +34,7 @@ define(
       "id": 2
     },
     {
-      "x": 890,
+      "x": 1070,
       "y": 340.5,
       "halfWidth": 49.5,
       "halfHeight": 500,
@@ -43,7 +43,6 @@ define(
       "type": "Rectangle",
       "id": 3
     },
-
     {
       "points": [
         {
@@ -173,7 +172,7 @@ define(
       "zone": false,
       "type": "Polygon",
       "fillStyle": "white",
-      "strokeStyle" : "white",
+      "strokeStyle": "white",
       "id": "torso"
     },
     {
@@ -223,7 +222,7 @@ define(
       "zone": false,
       "type": "Polygon",
       "fillStyle": "white",
-      "strokeStyle" : "white",
+      "strokeStyle": "white",
       "id": "luarm"
     },
     {
@@ -251,7 +250,7 @@ define(
       "zone": false,
       "type": "Polygon",
       "fillStyle": "white",
-      "strokeStyle" : "white",
+      "strokeStyle": "white",
       "id": "ruarm"
     },
     {
@@ -535,6 +534,38 @@ define(
       "type": "Polygon",
       "fillStyle": "black",
       "id": "rfoot"
+    },
+    {
+      "points": [
+        {
+          "x": -5,
+          "y": -4.399999999999977
+        },
+        {
+          "x": -3,
+          "y": -4.399999999999977
+        },
+        {
+          "x": 10,
+          "y": -0.39999999999997726
+        },
+        {
+          "x": 8,
+          "y": 6.600000000000023
+        },
+        {
+          "x": -10,
+          "y": 2.6000000000000227
+        }
+      ],
+      "x": 130,
+      "y": 316.4,
+      "staticBody": false,
+      "zone": false,
+      "type": "Polygon",
+      "fillStyle": "#EECEB3",
+      "strokeStyle": "#EECEB3",
+      "id": "thumb"
     }
   ],
   "joints": [
@@ -728,6 +759,21 @@ define(
         "lowerAngle": -0.785385,
         "upperAngle": 1.070796
       }
+    },
+    {
+      "bodyId1": "thumb",
+      "bodyId2": "lhand",
+      "type": "Revolute",
+      "id": "thumb",
+      "bodyPoint1": {
+        "x": 127,
+        "y": 315
+      },
+      "jointAttributes": {
+        "enableLimit": true,
+        "lowerAngle": 0.1,
+        "upperAngle": -0.1
+      }
     }
   ],
   "canvas": {
@@ -736,5 +782,4 @@ define(
   },
   "backImg": null
 }
-
 );
